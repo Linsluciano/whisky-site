@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Old';
+}
+@font-face {
+    font-family: 'Old';
+    src: url('OldLondon.ttf') format('truetype'), url('OldLondonAlternate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #BF4F36 0%,#022859 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.header{
+    background-color: #eee;
+    padding: 20px;
+}
+.form1{
+    padding: 20px;
+}
+.formcontrol{
+    margin-bottom: 10px;
+    padding: 20px;
+    position: relative;
+}
+.formcontrol label{
+    margin: 5px;
+    display: inline-block;
+}
+.formcontrol input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+.formcontrol i{
+    position: absolute;
+    top: 58px;
+    right: 25px;
+    visibility: hidden;
+}
+.formcontrol small{
+    position: absolute;
+    bottom: 0;
+    left:32px;
+    visibility: hidden;
+}
+.form1 button{
+    background-color: #BF4F36;
+    border: 2px solid #BF4F36;
+    color: fff;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* Error and Success*/
+.formcontrol.success input{
+    border-color: #2ecc71;
+}
+.formcontrol.error input{
+    border-color: #e74c3e;
+}
+.formcontrol.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.formcontrol.error i.fa-exclamation-circle{
+    color: #e74c3e;
+    visibility: visible;
+}
+.formcontrol.error small{
+    visibility: visible;
+    color: #e74c3e;
+}
